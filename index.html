@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <title>Eliza Ochoa | Cybersecurity Compliance Portfolio</title>
   <meta name="description" content="Cybersecurity compliance portfolio focused on CMMC, governance, risk, compliance, documentation, and research." />
   <style>
@@ -28,7 +29,7 @@
     }
 
     body{
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: Inter, system-ui, sans-serif;
       background: linear-gradient(180deg, #08111d 0%, #0b1220 100%);
       color: var(--text);
       line-height: 1.6;
@@ -55,6 +56,7 @@
       background: rgba(11,18,32,0.96);
       border-bottom: 1px solid var(--border);
       backdrop-filter: blur(8px);
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     }
 
     .nav{
@@ -122,8 +124,15 @@
 
     h2{
       color:var(--accent);
-      margin-bottom:12px;
+      margin-bottom:16px;
       font-size:1.5rem;
+      border-bottom:1px solid var(--border);
+      padding-bottom:8px;
+    }
+
+    h2 i{
+      color:var(--accent);
+      margin-right:8px;
     }
 
     p{
@@ -151,10 +160,12 @@
       font-weight:700;
     }
 
-    .btn-primary{
+    .btn-primary:hover{
       background:var(--accent);
       color:#05111d;
       border-color:var(--accent);
+      opacity:0.9;
+      transform: translateY(-2px);
     }
 
     .btn-secondary{
@@ -206,7 +217,7 @@
     }
 
     section{
-      padding:24px 0;
+      padding:60px 0;
     }
 
     .section-intro{
@@ -284,7 +295,13 @@
       border:1px solid var(--border);
       border-radius:14px;
       padding:20px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
+
+    .cad:hover{
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+    }  
 
     .card h3{
       margin-bottom:8px;
@@ -449,7 +466,7 @@
   <section id="expertise">
     <div class="container grid-2">
       <div class="panel">
-        <h2>Framework and Compliance Focus</h2>
+        <h2><i class="fa-solid fa-shield-halved"></i> Framework and Compliance Focus</h2>
         <p class="section-intro">
           Core areas aligned with compliance readiness, governance, and security documentation.
         </p>
@@ -483,7 +500,7 @@
   <section id="experience">
     <div class="container">
       <div class="panel">
-        <h2>Professional Experience</h2>
+        <h2><i class="fa-solid fa-briefcase"></i> Professional Experience</h2>
 
         <div class="timeline-item">
           <h3>U.S. Navy — Leadership and Compliance-Focused Operations</h3>
@@ -527,7 +544,7 @@
 
   <section id="projects">
     <div class="container">
-      <h2>Featured Work</h2>
+      <h2><i class="fa-solid fa-diagram-project"></i> Featured Work</h2>
       <p class="section-intro">
         Public-facing portfolio demonstrations based on projects developed locally first and later prepared as separate GitHub demo versions.
       </p>
@@ -571,7 +588,7 @@
 
   <section id="publications">
     <div class="container">
-      <h2>Publications</h2>
+      <h2><i class="fa-solid fa-book"></i> Publications</h2>
       <p class="section-intro">
         Professional research outputs, white papers, and technical publications linked through GitHub, Zenodo, DOI references, and ORCID.
       </p>
@@ -601,14 +618,14 @@
   <section id="contact">
     <div class="container contact">
       <div class="panel">
-        <h2>Professional Contact</h2>
+        <h2><i class="fa-solid fa-envelope"></i> Professional Contact</h2>
         <p><strong style="color:#e8eef7;">Email:</strong> ochoa104cy@outlook.com</p>
         <p><strong style="color:#e8eef7;">LinkedIn:</strong> linkedin.com/in/elizaochoa</p>
         <p><strong style="color:#e8eef7;">GitHub:</strong> github.com/eliza-ochoa</p>
       </div>
 
       <div class="panel">
-        <h2>Inquiry</h2>
+        <h2><i class="fa-solid fa-paper-plane"></i> Inquiry</h2>
         <form action="mailto:ochoa104cy@outlook.com" method="post" enctype="text/plain">
           <input type="text" name="name" placeholder="Your Name" required>
           <input type="text" name="organization" placeholder="Organization">
